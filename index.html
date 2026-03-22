@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber Dunes — Global Luxury Fragrance Curation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="Amber Dunes Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <section id="home" class="hero-section">
+    <div class="hero-track" id="heroTrack">
+
+      <div class="hero-slide" style="--bg: url('assets/hero-fresh.png')">
+        <div class="hero-content">
+          <h1>MODERN<br/><em>FRESH</em></h1>
+          <p>Everyday freshness, upgraded.</p>
+          <div class="hero-btn-right"><a href="#signature" class="btn btn-outline">SHOP NOW</a></div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="--bg: url('assets/carousel-luxury-alt.png')">
+        <div class="hero-content">
+          <h1>LUXURY<br/><em>& NICHE</em></h1>
+          <p>Crafted beyond the ordinary.</p>
+          <div class="hero-btn-right"><a href="#signature" class="btn btn-rose">SHOP NOW</a></div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="--bg: url('assets/hero-hidden.png')">
+        <div class="hero-content">
+          <h1>HIDDEN<br/><em>GEMS</em></h1>
+          <p>Discover what others miss.</p>
+          <div class="hero-btn-right"><a href="#signature" class="btn btn-gold">SHOP NOW</a></div>
+        </div>
+      </div>
+
+      <div class="hero-slide" style="--bg: url('assets/hero-budget.png')">
+        <div class="hero-content">
+          <h1>BUDGET<br/><em>PERFUME</em></h1>
+          <p>Luxury, without the price.</p>
+          <div class="hero-btn-right"><a href="#signature" class="btn btn-gold">SHOP NOW</a></div>
+        </div>
+      </div>
+
+    </div>
+    <button class="hero-arrow hero-prev" id="heroPrev">&#10094;</button>
+    <button class="hero-arrow hero-next" id="heroNext">&#10095;</button>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section id="signature" class="section-dark signature-section">
+    <h2 class="section-title">BEST SELLERS</h2>
+    <div class="sig-carousel-wrap">
+      <button class="sig-arrow sig-prev" id="sigPrev">&#8592;</button>
+      <div class="sig-track-outer">
+        <div class="sig-track" id="sigTrack">
+
+          <div class="sig-card">
+            <img src="assets/Afnan 9pm rebel vs Afnan 9pm or Men and Women 2024 Perfume.png" alt="Afnan 9pm" />
+            <p class="sig-name">Afnan 9pm</p>
+            <button class="btn-view-notes" onclick="openNotesPopup(event)" data-perfume="Afnan 9pm">VIEW NOTES</button>
+            <div class="sig-social-row">
+              <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="sig-social-btn" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Afnan%209pm.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="sig-social-btn" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+            </div>
+          </div>
+
+          <div class="sig-card">
+            <img src="assets/sig-2.png" alt="Oud & Roses" />
+            <p class="sig-name">Oud & Roses</p>
+            <button class="btn-view-notes" onclick="openNotesPopup(event)" data-perfume="Oud & Roses">VIEW NOTES</button>
+            <div class="sig-social-row">
+              <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="sig-social-btn" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Oud%20%26%20Roses.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="sig-social-btn" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+            </div>
+          </div>
+
+          <div class="sig-card">
+            <img src="assets/Sauvage Elixir.png" alt="Sauvage Elixir" />
+            <p class="sig-name">Sauvage Elixir</p>
+            <button class="btn-view-notes" onclick="openNotesPopup(event)" data-perfume="Sauvage Elixir">VIEW NOTES</button>
+            <div class="sig-social-row">
+              <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="sig-social-btn" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Sauvage%20Elixir.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="sig-social-btn" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+            </div>
+          </div>
+
+          <div class="sig-card">
+            <img src="assets/Le Male Elixir Parfum.png" alt="Le Male Elixir" />
+            <p class="sig-name">Le Male Elixir</p>
+            <button class="btn-view-notes" onclick="openNotesPopup(event)" data-perfume="Le Male Elixir">VIEW NOTES</button>
+            <div class="sig-social-row">
+              <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="sig-social-btn" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Le%20Male%20Elixir.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="sig-social-btn" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+            </div>
+          </div>
+
+
+
+
+          <div class="sig-card">
+            <img src="assets/Ahmed al maghribi marj.png" alt="Ahmed Al Maghribi" />
+            <p class="sig-name">Ahmed Al Maghribi</p>
+            <button class="btn-view-notes" onclick="openNotesPopup(event)" data-perfume="Ahmed Al Maghribi">VIEW NOTES</button>
+            <div class="sig-social-row">
+              <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="sig-social-btn" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Ahmed%20Al%20Maghribi.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="sig-social-btn" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+            </div>
+          </div>
+
+          <div class="sig-card sig-card--more" onclick="openKnowMore(event)" style="cursor:pointer;">
+            <div class="sig-more-inner">
+              <p class="sig-more-count">AND 50+<br/>MORE…</p>
+              <p class="sig-more-desc">From rare niche Ouds to classic Designer Icons. We source what you desire.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="sig-arrow sig-next" id="sigNext">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- EXPLORE THE COLLECTIONS -->
+  <section class="section-dark collection-section">
+    <h2 class="section-title">EXPLORE THE COLLECTIONS</h2>
+    <div class="collection-grid">
+
+      <div class="coll-card coll-card--plain" data-index="0" style="background-image: url('assets/card/ownthenight.jpeg');">
+        <div class="coll-overlay coll-overlay--plain">
+          <h3>OWN THE NIGHT.</h3>
+          <button class="btn-know-more" onclick="openModal(0)">KNOW MORE</button>
+        </div>
+      </div>
+
+      <div class="coll-card coll-card--plain" data-index="1" style="background-image: url('assets/card/freshcleanfocused.jpeg');">
+        <div class="coll-overlay coll-overlay--plain">
+          <h3>FRESH. CLEAN. FOCUSED.</h3>
+          <button class="btn-know-more" onclick="openModal(1)">KNOW MORE</button>
+        </div>
+      </div>
+
+      <div class="coll-card coll-card--plain" data-index="2" style="background-image: url('assets/card/intimacy.jpeg');">
+        <div class="coll-overlay coll-overlay--plain">
+          <h3>INTIMACY, REDEFINED.</h3>
+          <button class="btn-know-more" onclick="openModal(2)">KNOW MORE</button>
+        </div>
+      </div>
+
+      <div class="coll-card coll-card--plain" data-index="3" style="background-image: url('assets/card/commandtheroom.jpg');">
+        <div class="coll-overlay coll-overlay--plain">
+          <h3>COMMAND THE ROOM.</h3>
+          <button class="btn-know-more" onclick="openModal(3)">KNOW MORE</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COLLECTION POPUP MODAL -->
+  <div class="modal-overlay" id="collectionModal">
+
+    <!-- Close button -->
+    <button class="modal-close" id="modalClose">&#10005;</button>
+
+    <div class="modal-outer">
+      <!-- Left arrow outside box -->
+      <button class="modal-arrow modal-prev" id="modalPrev">&#10094;</button>
+
+      <!-- Modal box -->
+      <div class="modal-box">
+
+        <div class="modal-slides" id="modalSlides">
+
+          <!-- SLIDE 0: Own the Night -->
+          <div class="modal-slide">
+            <div class="modal-content">
+              <h3>OWN THE NIGHT.</h3>
+              <p class="modal-desc">Deep, bold, and unforgettable scents built for the night.</p>
+              <div class="modal-product-grid">
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/Sauvage Elixir.jpg" alt="Sauvage Elixir" /></div>
+                  <p class="mpcard-name">Sauvage Elixir</p>
+                  <p class="mpcard-brand">Dior</p>
+                  <p class="mpcard-price" data-inr-low="17000" data-inr-high="20000" data-price="18500">₹17,000 – ₹20,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Sauvage Elixir">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Sauvage%20Elixir.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/Noir Extreme – Tom Ford.png" alt="Noir Extreme" /></div>
+                  <p class="mpcard-name">Noir Extreme</p>
+                  <p class="mpcard-brand">Tom Ford</p>
+                  <p class="mpcard-price" data-inr-low="15000" data-inr-high="17000" data-price="16000">₹15,000 – ₹17,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Noir Extreme">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Noir%20Extreme.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/Afnan 9pm night out.png" alt="9PM Night Out" /></div>
+                  <p class="mpcard-name">9PM Night Out</p>
+                  <p class="mpcard-brand">Afnan</p>
+                  <p class="mpcard-price" data-inr-low="9000" data-inr-high="12000" data-price="10500">₹9,000 – ₹12,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="9PM Night Out">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%209PM%20Night%20Out.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/Stronger With You Intensely – Giorgio Armani.png" alt="Stronger With You Intensely" /></div>
+                  <p class="mpcard-name">Stronger With You Intensely</p>
+                  <p class="mpcard-brand">Giorgio Armani</p>
+                  <p class="mpcard-price" data-inr-low="8000" data-inr-high="11000" data-price="9500">₹8,000 – ₹11,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Stronger With You Intensely">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Stronger%20With%20You%20Intensely.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/Spicebomb Extreme – Viktor & Rolf.png" alt="Spicebomb Extreme" /></div>
+                  <p class="mpcard-name">Spicebomb Extreme</p>
+                  <p class="mpcard-brand">Viktor &amp; Rolf</p>
+                  <p class="mpcard-price" data-inr-low="8500" data-inr-high="11000" data-price="9750">₹8,500 – ₹11,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Spicebomb Extreme">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Spicebomb%20Extreme.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/ownthenight/La Nuit de L’Homme – Yves Saint Laurent.png" alt="La Nuit de L'Homme" /></div>
+                  <p class="mpcard-name">La Nuit de L'Homme</p>
+                  <p class="mpcard-brand">Yves Saint Laurent</p>
+                  <p class="mpcard-price" data-inr-low="7000" data-inr-high="9500" data-price="8250">₹7,000 – ₹9,500</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="La Nuit de L'Homme">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20La%20Nuit%20de%20L%27Homme.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-ig-cta">
+                <p>Explore the full collection on our Instagram</p>
+                <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="modal-ig-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  @amberdunes_perfumes
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 1: Fresh. Clean. Focused. -->
+          <div class="modal-slide">
+            <div class="modal-content">
+              <h3>FRESH. CLEAN. FOCUSED.</h3>
+              <p class="modal-desc">Light, crisp, and energizing scents for everyday clarity.</p>
+              <div class="modal-product-grid">
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/Bleu de Chanel EDT – Chanel.png" alt="Bleu de Chanel" /></div>
+                  <p class="mpcard-name">Bleu de Chanel EDT</p>
+                  <p class="mpcard-brand">Chanel</p>
+                  <p class="mpcard-price" data-inr-low="12000" data-inr-high="18500" data-price="15250">₹12,000 – ₹18,500</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Bleu de Chanel EDT">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Bleu%20de%20Chanel%20EDT.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/Acqua di Gio Profondo – Giorgio Armani.png" alt="Acqua di Gio" /></div>
+                  <p class="mpcard-name">Acqua di Gio Profondo</p>
+                  <p class="mpcard-brand">Giorgio Armani</p>
+                  <p class="mpcard-price" data-inr-low="9000" data-inr-high="14500" data-price="11750">₹9,000 – ₹14,500</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Acqua di Gio Profondo">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Acqua%20di%20Gio%20Profondo.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/Light Blue Pour Homme – Dolce & Gabbana.png" alt="Light Blue" /></div>
+                  <p class="mpcard-name">Light Blue Pour Homme</p>
+                  <p class="mpcard-brand">Dolce &amp; Gabbana</p>
+                  <p class="mpcard-price" data-inr-low="7500" data-inr-high="9500" data-price="8500">₹7,500 – ₹9,500</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Light Blue Pour Homme">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Light%20Blue%20Pour%20Homme.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/versace.png" alt="Versace Pour Homme" /></div>
+                  <p class="mpcard-name">Versace Pour Homme</p>
+                  <p class="mpcard-brand">Versace</p>
+                  <p class="mpcard-price" data-inr-low="3500" data-inr-high="6000" data-price="4750">₹3,500 – ₹6,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Versace Pour Homme">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Versace%20Pour%20Homme.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/Hawas for Him – Rasasi.png" alt="Hawas for Him" /></div>
+                  <p class="mpcard-name">Hawas for Him</p>
+                  <p class="mpcard-brand">Rasasi</p>
+                  <p class="mpcard-price" data-inr-low="3500" data-inr-high="6000" data-price="4750">₹3,500 – ₹6,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Hawas for Him">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Hawas%20for%20Him.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/fresh-clean-focused/ckone.png" alt="CK One" /></div>
+                  <p class="mpcard-name">CK One</p>
+                  <p class="mpcard-brand">Calvin Klein</p>
+                  <p class="mpcard-price" data-inr-low="2500" data-inr-high="4000" data-price="3250">₹2,500 – ₹4,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="CK One">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20CK%20One.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-ig-cta">
+                <p>More curated scents await on our Instagram →</p>
+                <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="modal-ig-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  @amberdunes_perfumes
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: Intimacy, Redefined. -->
+          <div class="modal-slide">
+            <div class="modal-content">
+              <h3>INTIMACY, REDEFINED.</h3>
+              <p class="modal-desc">Warm, soft, and sensual fragrances that stay close.</p>
+              <div class="modal-product-grid">
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/Aventus – Creed.png" alt="Aventus" /></div>
+                  <p class="mpcard-name">Aventus</p>
+                  <p class="mpcard-brand">Creed</p>
+                  <p class="mpcard-price" data-inr-low="25000" data-inr-high="35000" data-price="30000">₹25,000 – ₹35,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Aventus">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Aventus.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/Mk francis bacarat rouge 540.png" alt="Baccarat Rouge 540" /></div>
+                  <p class="mpcard-name">Baccarat Rouge 540</p>
+                  <p class="mpcard-brand">Maison Francis Kurkdjian</p>
+                  <p class="mpcard-price" data-inr-low="20000" data-inr-high="30000" data-price="25000">₹20,000 – ₹30,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Baccarat Rouge 540">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Baccarat%20Rouge%20540.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/Armani Code Absolu – Giorgio Armani.png" alt="Armani Code Absolu" /></div>
+                  <p class="mpcard-name">Armani Code Absolu</p>
+                  <p class="mpcard-brand">Giorgio Armani</p>
+                  <p class="mpcard-price" data-inr-low="8000" data-inr-high="11000" data-price="9500">₹8,000 – ₹11,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Armani Code Absolu">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Armani%20Code%20Absolu.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/Le Male Le Parfum – Jean Paul Gaultier.png" alt="Le Male Le Parfum" /></div>
+                  <p class="mpcard-name">Le Male Le Parfum</p>
+                  <p class="mpcard-brand">Jean Paul Gaultier</p>
+                  <p class="mpcard-price" data-inr-low="7500" data-inr-high="10000" data-price="8750">₹7,500 – ₹10,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Le Male Le Parfum">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Le%20Male%20Le%20Parfum.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/Y EDP – Yves Saint Laurent.png" alt="Y EDP" /></div>
+                  <p class="mpcard-name">Y EDP</p>
+                  <p class="mpcard-brand">Yves Saint Laurent</p>
+                  <p class="mpcard-price" data-inr-low="8500" data-inr-high="11000" data-price="9750">₹8,500 – ₹11,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Y EDP">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Y%20EDP.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/intimacy/9PM – Afnan.png" alt="9PM" /></div>
+                  <p class="mpcard-name">9PM</p>
+                  <p class="mpcard-brand">Afnan</p>
+                  <p class="mpcard-price" data-inr-low="3000" data-inr-high="5000" data-price="4000">₹3,000 – ₹5,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="9PM">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%209PM.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-ig-cta">
+                <p>More curated scents await on our Instagram →</p>
+                <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="modal-ig-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  @amberdunes_perfumes
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: Command the Room -->
+          <div class="modal-slide">
+            <div class="modal-content">
+              <h3>COMMAND THE ROOM.</h3>
+              <p class="modal-desc">Powerful, attention-grabbing scents that leave a lasting impression.</p>
+              <div class="modal-product-grid">
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/Azzaro most wanted edp.png" alt="The Most Wanted EDP" /></div>
+                  <p class="mpcard-name">The Most Wanted EDP</p>
+                  <p class="mpcard-brand">Azzaro</p>
+                  <p class="mpcard-price" data-inr-low="8000" data-inr-high="12000" data-price="10000">₹8,000 – ₹12,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="The Most Wanted EDP">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20The%20Most%20Wanted%20EDP.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/Oud-n-roses.png" alt="Oud &amp; Roses" /></div>
+                  <p class="mpcard-name">Oud &amp; Roses</p>
+                  <p class="mpcard-brand">Ahmed Al Maghribi</p>
+                  <p class="mpcard-price" data-inr-low="3000" data-inr-high="6000" data-price="4500">₹3,000 – ₹6,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Oud &amp; Roses">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Oud%20%26%20Roses.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/Invictus Victory – Paco Rabanne.png" alt="Invictus Victory" /></div>
+                  <p class="mpcard-name">Invictus Victory</p>
+                  <p class="mpcard-brand">Paco Rabanne</p>
+                  <p class="mpcard-price" data-inr-low="7500" data-inr-high="10500" data-price="9000">₹7,500 – ₹10,500</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Invictus Victory">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Invictus%20Victory.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/1 Million – Paco Rabanne.png" alt="1 Million" /></div>
+                  <p class="mpcard-name">1 Million</p>
+                  <p class="mpcard-brand">Paco Rabanne</p>
+                  <p class="mpcard-price" data-inr-low="6500" data-inr-high="9000" data-price="7750">₹6,500 – ₹9,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="1 Million">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%201%20Million.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/tomfordombre.png" alt="Ombre Leather" /></div>
+                  <p class="mpcard-name">Ombre Leather</p>
+                  <p class="mpcard-brand">Tom Ford</p>
+                  <p class="mpcard-price" data-inr-low="12000" data-inr-high="18000" data-price="15000">₹12,000 – ₹18,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Ombre Leather">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Ombre%20Leather.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+                <div class="modal-product-card">
+                  <div class="mpcard-img"><img src="assets/commandroom/Club de Nuit Intense Man – Armaf.png" alt="Club de Nuit Intense Man" /></div>
+                  <p class="mpcard-name">Club de Nuit Intense Man</p>
+                  <p class="mpcard-brand">Armaf</p>
+                  <p class="mpcard-price" data-inr-low="3000" data-inr-high="5000" data-price="4000">₹3,000 – ₹5,000</p>
+                  <button class="mpcard-view-notes" onclick="openCardNotes(this)" data-perfume="Club de Nuit Intense Man">VIEW NOTES</button>
+                  <div class="mpcard-social-row">
+                    <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                    <a href="https://wa.me/919778542502?text=Hi%2C%20I%27d%20like%20to%20know%20if%20you%20have%20stock%20of%20Club%20de%20Nuit%20Intense%20Man.%20I%27d%20also%20like%20to%20know%20more%20about%20it." target="_blank" class="mpcard-social-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-ig-cta">
+                <p>More curated scents await on our Instagram →</p>
+                <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="modal-ig-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  @amberdunes_perfumes
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end modal-slides -->
+
+        <!-- Dots inside modal box -->
+        <div class="modal-dots" id="modalDots"></div>
+
+      </div><!-- end modal-box -->
+
+      <!-- Right arrow outside box -->
+      <button class="modal-arrow modal-next" id="modalNext">&#10095;</button>
+    </div><!-- end modal-outer -->
+
+  </div><!-- end modal-overlay -->
+
+  <!-- HOW TO ORDER -->
+  <section class="section-dark how-section">
+    <h2 class="section-title">HOW TO ORDER</h2>
+    <div class="how-steps">
+
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <h3>EXPLORE</h3>
+        <p>Browse our curated reviews and occasion guides to find your next signature scent.</p>
+      </div>
+
+      <div class="how-connector"></div>
+
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <h3>INQUIRE</h3>
+        <p>Tap any Inquire button to start a private consultation with us via Instagram DM.</p>
+      </div>
+
+      <div class="how-connector"></div>
+
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <h3>SECURE</h3>
+        <p>We confirm availability and ship your fragrance directly from our doors to your doorstep.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="section-dark about-section">
+    <div class="about-card">
+      <div class="about-text">
+        <h2 class="about-title">ABOUT US</h2>
+        <p>We bring together some of the world's most evocative fragrances — from timeless designer icons to rare Middle Eastern gems. Each scent is chosen for its quality, character, and lasting impression, offering a refined experience without the luxury price tag.
+
+Discover your signature scent.
+
+For inquiries and personal recommendations, connect with us on Instagram.</p>
+      </div>
+      <div class="about-grid">
+        <img src="assets/hero-luxury.jpg" alt="Luxury" class="about-img" />
+        <img src="assets/about-2.jpg" alt="About 2" class="about-img" />
+        <img src="assets/about-1.jpg" alt="About 1" class="about-img" />
+        <img src="assets/sign-3.jpg" alt="Signature" class="about-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="footer-bg">
+      <img src="assets/footer-dunes.png" alt="" class="footer-dunes" />
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Amber Dunes" class="footer-logo" />
+        <p class="footer-tagline">Your Gateway to Iconic Fragrances</p>
+        <p class="footer-copy">INDIA &nbsp;|&nbsp; DUBAI &nbsp;|&nbsp; QATAR</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#" onclick="openKnowMore(event)">Know More</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="tel:+919995544488">+91 99955 44488</a></li>
+          <li><a href="tel:+919778542502">+91 97785 42502</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="footer-ig" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>AMBER DUNES. DISCOVER FRAGRANCES. AUTHENTICITY GUARANTEED.</p>
+    </div>
+  </footer>
+  <!-- ENQUIRE MODAL -->
+  <div class="enquire-overlay" id="enquireModal">
+    <div class="enquire-box">
+      <button class="enquire-close" id="enquireClose">&#10005;</button>
+      <h3 class="enquire-title">Enquire About This Fragrance</h3>
+      <p class="enquire-sub">Choose how you'd like to connect with us</p>
+      <div class="enquire-btns">
+        <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="enquire-btn enquire-btn--ig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/919778542502?text=Hello%2C%20I%E2%80%99m%20interested%20in%20exploring%20your%20range%20of%20fragrances" target="_blank" class="enquire-btn enquire-btn--wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- PERFUME NOTES POPUP -->
+  <div class="notes-overlay" id="notesModal">
+    <div class="notes-box">
+      <button class="notes-close" id="notesClose">&#10005;</button>
+      <h3 class="notes-name" id="notesName"></h3>
+      <div class="notes-content" id="notesContent"></div>
+    </div>
+  </div>
+  <!-- KNOW MORE POPUP -->
+  <div class="knowmore-overlay" id="knowMoreModal">
+    <div class="knowmore-box">
+      <button class="knowmore-close" id="knowMoreClose">&#10005;</button>
+      <h3 class="knowmore-title">Your Gateway to Iconic Fragrances</h3>
+      <p class="knowmore-body">This is just a glimpse of our collection. We offer an extensive range featuring 30+ brands, spanning from budget-friendly fragrances to premium designer and luxury selections. Many more exclusive options can be sourced and delivered upon request.</p>
+      <p class="knowmore-body">For personalized recommendations and access to our full catalogue, please get in touch with us.</p>
+      <div class="knowmore-btns">
+        <a href="https://wa.me/919778542502?text=Hello%2C%20I%E2%80%99m%20interested%20in%20exploring%20your%20range%20of%20fragrances" target="_blank" class="knowmore-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.886a.5.5 0 0 0 .609.61l6.098-1.598A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 0 1-5.028-1.383l-.36-.215-3.733.978.997-3.645-.235-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/amberdunes_perfumes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="knowmore-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+      </div>
+      <p class="knowmore-footer">AMBER DUNES</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
